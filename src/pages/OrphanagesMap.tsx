@@ -51,6 +51,7 @@ function OrphanagesMap() {
 
   return (
     <div id="page-map">
+
       <aside>
         <header>
           <img src={mapMarkerImg} alt="Happy" />
@@ -64,15 +65,18 @@ function OrphanagesMap() {
         </footer>
       </aside>
 
+
       <Map
         center={[-15.8950577, -48.118437]}
-        zoom={16.75}
+        zoom={15.75}
         style={{ width: '100%', height: '100%' }}
       >
         <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" ></TileLayer>
 
-
-        {orphanages.map(orphanage => {
+        
+        
+        { orphanages.map(orphanage => {
+          //Pra cada orfanato que veio do get ele vai fazer essa parada, que é colocar um marcador e o botão com link
           return (
             <Marker
               icon={mapIcon}
@@ -88,8 +92,8 @@ function OrphanagesMap() {
             </Marker>
           )
         })}
-
       </Map>
+
 
       <Link to="/orphanages/create" className="create-orphanage">
         <FiPlus size={32} color="#FFF"></FiPlus>
