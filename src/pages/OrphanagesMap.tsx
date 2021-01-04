@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FiPlus, FiArrowRight } from 'react-icons/fi'
-import '../styles/pages/orphanages-map.css'
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import Leaflet, { popup } from 'leaflet'
 
+import '../styles/pages/orphanages-map.css'
 import 'leaflet/dist/leaflet.css'
-
 import mapMarkerImg from '../images/Local.svg'
+
 import api from '../services/api'
 
+
+// Marker config
 const mapIcon = Leaflet.icon({
   iconUrl: mapMarkerImg,
 
@@ -20,7 +22,7 @@ const mapIcon = Leaflet.icon({
 })
 
 
-
+// Type Script interface
 interface Orphanage {
   id: number;
   latitude: number;
@@ -29,10 +31,15 @@ interface Orphanage {
 }
 
 
+
+
+// Início da página
 function OrphanagesMap() {
 
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
 
+
+  //Fazendo a requisição e pegando a lista de orfanatos
   useEffect(() => {
     api.get('orphanages').then(response => {
       setOrphanages(response.data)
