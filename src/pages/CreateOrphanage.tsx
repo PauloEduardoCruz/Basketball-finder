@@ -181,7 +181,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="opening_hours">Horário de funcionamento</label>
+              <label htmlFor="opening_hours">Horário de início</label>
               <input
                id="opening_hours"
                value={opening_hours}
@@ -190,7 +190,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="open_on_weekends">Atende fim de semana</label>
+              <label htmlFor="open_on_weekends">Quadra com duas cestas:</label>
 
               <div className="button-select">
                 <button 
@@ -222,4 +222,4 @@ export default function CreateOrphanage() {
   );
 }
 
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
+ // return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
