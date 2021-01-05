@@ -30,6 +30,7 @@ export default function CreateOrphanage() {
   const [instructions, setInstructions] = useState('');
   const [opening_hours, setOpeningHours] = useState('');
   const [open_on_weekends, setOpenOnWeekends] = useState(true);
+
   const [images, setImages] = useState<File[]>([]);
   const [previewImages, setPreviewImages] = useState<string[]>([]);
 
@@ -47,10 +48,11 @@ export default function CreateOrphanage() {
 
 
   function handlerSelectImages(event: ChangeEvent<HTMLInputElement>) {
-
+    
     if (!event.target.files) {
       return;
     }
+    
 
     const selectedImages = Array.from(event.target.files)
     setImages(selectedImages);

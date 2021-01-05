@@ -43,7 +43,7 @@ interface OrphanageParams {
 
 export default function Orphanage() {
   const params = useParams<OrphanageParams>();
-  console.log(params)
+  
   const [orphanage, setOrphanage] = useState<Orphanage>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -52,6 +52,7 @@ export default function Orphanage() {
       setOrphanage(response.data)
     })
   }, [params.id]);
+
 
   if (!orphanage) {
     return <p>Carregando...</p>
@@ -64,10 +65,15 @@ export default function Orphanage() {
 
       <main>
         <div className="orphanage-details">
+
+          {/* Imagem grande */}
+          
           <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
 
+          {/* Imagem Pequenas */}
           <div className="images">
             {orphanage.images.map((image, index) =>{
+              
               return (
                 <button
                  key={image.id}
@@ -81,8 +87,8 @@ export default function Orphanage() {
                 </button>
               )
             })}
-
           </div>
+            
 
           <div className="orphanage-details-content">
             <h1>{orphanage.name}</h1>
@@ -133,8 +139,6 @@ export default function Orphanage() {
                   fim de semana
                   </div>
                 )}
-
-
             </div>
 
 
