@@ -67,11 +67,11 @@ export default function CreateOrphanage() {
 
   async function handlerSubmit(event: FormEvent) {
     event.preventDefault();
-
+  
     const { latitude, longitude } = position;
 
     const data = new FormData();
-    
+
     data.append('name', name);
     data.append('about', about);
     data.append('latitude', String(latitude));
@@ -86,9 +86,10 @@ export default function CreateOrphanage() {
 
     await api.post('orphanages', data);
 
-    alert('Cadastro realizado com sucesso!');
+    alert('Cadastro realizado com sucesso!',);
 
     history.push('/app');
+
 
     /*
     console.log({
@@ -120,14 +121,12 @@ export default function CreateOrphanage() {
             >
               <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" ></TileLayer>
 
-
               { position.latitude !== 0 
               ? <Marker interactive={false} icon={happyMapIcon} position={[position.latitude, position.longitude]} />
               : null }
-
-
-              {/* <Marker interactive={false} icon={happyMapIcon} position={[-15.8950577,-48.118437]}> */}
             </Map>
+
+
 
             <div className="input-block">
               <label htmlFor="name">Nome</label>
@@ -203,7 +202,7 @@ export default function CreateOrphanage() {
                   Sim
                 </button>
 
-                <button 
+                <button
                  type="button"
                  className={!open_on_weekends ? 'active' : ''}
                  onClick={() => setOpenOnWeekends(false)}
