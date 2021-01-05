@@ -11,6 +11,8 @@ import { useParams } from 'react-router-dom'
 import '../styles/pages/orphanage.css';
 import api from "../services/api";
 
+
+// Marker config
 const happyMapIcon = L.icon({
   iconUrl: mapMarkerImg,
 
@@ -19,7 +21,7 @@ const happyMapIcon = L.icon({
   popupAnchor: [0, -60]
 })
 
-
+// Type Script interface
 interface Orphanage {
   latitude: number;
   longitude: number;
@@ -41,6 +43,7 @@ interface OrphanageParams {
 
 export default function Orphanage() {
   const params = useParams<OrphanageParams>();
+  console.log(params)
   const [orphanage, setOrphanage] = useState<Orphanage>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -68,7 +71,7 @@ export default function Orphanage() {
               return (
                 <button
                  key={image.id}
-                 className={activeImageIndex == index ? 'active' : ''}
+                 className={activeImageIndex === index ? 'active' : ''}
                  type="button"
                  onClick={() => {
                     setActiveImageIndex(index);
