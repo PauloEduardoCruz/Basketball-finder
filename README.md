@@ -22,16 +22,13 @@
 
 ## ❔ Sobre o projeto
 
-Uma plataforma para facilitar o encontro de orfanatos por pessoas que querem visita-los.
-
-O projeto está em desenvolvimento na [Next Level Week 3](https://nextlevelweek.com/episodios/omnistack/1/edicao/3)
-
+Uma plataforma para facilitar o encontro de jogos de basquete que estejam acontecendo perto de você.
 
 ## 📸 Screenshots
 
 <p align="center">
   <strong>Tela Web</strong> <br />
-  <img src="./.github/assets/gifs/demo.gif" alt="Demonstração da plataforma Happy" />
+  <img src="./.github/assets/gifs/map.png" alt="Demonstração da plataforma Happy"/>
 </p>
 
 ## 🛠 Techs
