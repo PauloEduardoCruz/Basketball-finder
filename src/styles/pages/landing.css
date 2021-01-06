@@ -1,7 +1,7 @@
 #page-landing{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    background: linear-gradient(329.54deg, #db4e04 0%, #7d4645 100%);
 
     display: flex;
     justify-content: center;
@@ -24,7 +24,9 @@
     flex-direction: column;
     justify-content: space-between;
 
-    background: url('../../images/Ilustra02.svg') no-repeat 80% center;
+
+    background: url('../../images/baska1.png') no-repeat 80% center;
+    background-size: 450px 450px;
 }
 
 
@@ -69,7 +71,7 @@
 
     width: 80px;
     height: 80px;
-    background: #ffd666;
+    background: #fff;
     border-radius: 30%;
 
     display: flex;
@@ -80,5 +82,5 @@
 }
 
 .content-wrapper .enter-app:hover {
-    background: #96FEFF;
+    background:#ff6200;
 }

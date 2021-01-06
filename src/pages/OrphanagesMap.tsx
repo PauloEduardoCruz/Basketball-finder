@@ -6,12 +6,16 @@ import Leaflet from 'leaflet'
 
 import '../styles/pages/orphanages-map.css'
 import 'leaflet/dist/leaflet.css'
-import mapMarkerImg from '../images/Local.svg'
+//import mapMarkerImg from '../images/Local.svg'
+import mapMarkerImg from '../images/pin.svg'
+import log from '../images/Log3.png'
+
 
 import api from '../services/api'
 
 
 // Marker config
+/*
 const mapIcon = Leaflet.icon({
   iconUrl: mapMarkerImg,
 
@@ -21,6 +25,19 @@ const mapIcon = Leaflet.icon({
 
 })
 
+  iconSize: [150, 150],
+  iconAnchor: [29, 68],
+  popupAnchor: [170, 2]
+*/
+
+const mapIcon = Leaflet.icon({
+  iconUrl: mapMarkerImg,
+
+  iconSize: [70, 70],
+  iconAnchor: [35, 70],
+  popupAnchor: [150, -17]
+
+})
 
 // Type Script interface
 interface Orphanage {
@@ -54,10 +71,10 @@ function OrphanagesMap() {
 
       <aside>
         <header>
-          <img src={mapMarkerImg} alt="Happy" />
+        <img src={log} width="100" height="100" alt="Happy" />
 
-          <h2>Escolha um orfanato no mapa</h2>
-          <p>Muitas crianças estão esperando a sua visita:)</p>
+          <h2>Escolha um jogo no mapa</h2>
+          <p>Muitos jogadores estão esperando você.</p>
         </header>
         <footer>
           <strong>Brasília</strong>
@@ -68,7 +85,7 @@ function OrphanagesMap() {
 
       <Map
         center={[-15.8950577, -48.118437]}
-        zoom={15.75}
+        zoom={14.75}
         style={{ width: '100%', height: '100%' }}
       >
         <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" ></TileLayer>
