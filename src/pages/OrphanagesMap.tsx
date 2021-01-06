@@ -102,7 +102,7 @@ function OrphanagesMap() {
             >
               <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
                 {orphanage.name}
-                <Link to={`/orphanages/${orphanage.id}`} >
+                <Link to={`/event/${orphanage.id}`} >
                   <FiArrowRight size={20} color="FFF"></FiArrowRight>
                 </Link>
               </Popup>
@@ -112,7 +112,7 @@ function OrphanagesMap() {
       </Map>
 
 
-      <Link to="/orphanages/create" className="create-orphanage">
+      <Link to="/event/create" className="create-orphanage">
         <FiPlus size={32} color="#FFF"></FiPlus>
       </Link>
     </div>

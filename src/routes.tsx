@@ -13,8 +13,8 @@ function Routes() {
                 <Route path="/" exact component={Landing}></Route>
                 <Route path="/app" component={OrphanagesMap}></Route>
 
-                <Route path="/orphanages/create" component={CreateOrphanage}></Route>
-                <Route path="/orphanages/:id" component={Orphanage}></Route>
+                <Route path="/event/create" component={CreateOrphanage}></Route>
+                <Route path="/event/:id" component={Orphanage}></Route>
             </Switch>
         </BrowserRouter>
     )
