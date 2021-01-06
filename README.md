@@ -28,7 +28,7 @@ Uma plataforma para facilitar o encontro de jogos de basquete que estejam aconte
 
 <p align="center">
   <strong>Tela Web</strong> <br />
-  <img src="./.github/assets/gifs/map.png" alt="Demonstração da plataforma Happy"/>
+  <img src="./.github/assets/images/map.png" alt="Demonstração da plataforma Happy"/>
 </p>
 
 ## 🛠 Techs
