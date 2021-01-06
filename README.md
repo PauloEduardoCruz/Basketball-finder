@@ -65,17 +65,10 @@ As demonstrações utilizam **YARN** por padronização, mas, caso use **NPM**, 
 **Instalando dependências do projeto web:**
 
 ```bash
-> cd happy/web
+> cd frontend
 > yarn install
 ```
 
-Para executar o projeto **web** completo é necessário ter um **token** de autenticação da API do Mapbox. Acesse sua conta no site e crie um token para ser utilizado no projeto. Com o token em mãos, crie um arquivo `.env` e coloque seu token como valor da chave `REACT_APP_MAPBOX_TOKEN`.
-
-Exemplo:
-
-```text
-REACT_APP_MAPBOX_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-```
 
 Agora starte o projeto em seu ambiente com:
 
@@ -86,10 +79,10 @@ Agora starte o projeto em seu ambiente com:
 Acesse: [`http://127.0.0.1:3000/`](http://127.0.0.1:3000/) para visualizar.
 
 
-**Instalando dependências do projeto backend:**
+**Instalando dependências do projeto backend: (Abra um novo terminal)**
 
 ```bash
-> cd happy/backend
+> cd backend
 > yarn install
 ```
 
@@ -102,24 +95,6 @@ Para executar o projeto **backend** é necessário criar o banco de dados com to
 
 Acesse: [`http://127.0.0.1:3333/`](http://127.0.0.1:3333/) para visualizar.
 
-
-## 🤝 Contribuições
-
-Siga os passos abaixo para contribuir:
-
-1. Faça o *fork* do projeto (<https://github.com/matheusfelipeog/happy>)
-
-2. Clone o seu *fork* para sua maquína (`git clone https://github.com/user_name/happy.git`)
-
-3. Crie uma *branch* para realizar sua modificação (`git checkout -b feature/name_new_feature`)
-
-4. Adicione suas modificações e faça o *commit* (`git commit -m "Descreva sua modificação"`)
-
-5. *Push* (`git push origin feature/name_new_feature`)
-
-6. Crie um novo *Pull Request*
-
-7. Pronto, agora só aguardar a análise 🚀 
 
 
 ## 📜 License
