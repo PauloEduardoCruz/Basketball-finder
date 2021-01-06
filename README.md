@@ -1,5 +1,4 @@
 <h2 align="center">
-  <img src="https://img.shields.io/badge/Next%20Level%20Week-%233-00b8d3?style=for-the-badge" alt="Evento Next Level Week 3" />
   <img src="https://img.shields.io/badge/web%3F-ok-00b8d3?style=for-the-badge" alt="Sistema web Ok" />
   <img src="https://img.shields.io/badge/server%3F-ok-00b8d3?style=for-the-badge" alt="Server OK" />
   <img src="https://img.shields.io/badge/app mobile%3F-No-00b8d3?style=for-the-badge" alt="Aplicativo mobile No" />
@@ -7,7 +6,7 @@
 </h2>
 
 <h1 align="center">
-  <img src="./.github/assets/images/capa_happy.png" alt="Logo da Proffy" width="1000px" />
+  <img src="./.github/assets/images/landing.png" alt="Logo da Proffy" width="1000px" />
 </h1>
 
 
