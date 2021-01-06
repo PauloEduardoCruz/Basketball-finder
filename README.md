@@ -6,7 +6,7 @@
 </h2>
 
 <h1 align="center">
-  <img src="./.github/assets/images/landing.png" alt="Logo da Proffy" width="1000px" />
+  <img src="./.github/assets/images/landing.png" alt="Landing" width="1000px" />
 </h1>
 
 
@@ -28,7 +28,11 @@ Uma plataforma para facilitar o encontro de jogos de basquete que estejam aconte
 
 <p align="center">
   <strong>Tela Web</strong> <br />
-  <img src="./.github/assets/images/map.png" alt="Demonstração da plataforma Happy"/>
+  <img src="./.github/assets/images/map.png" alt="Demonstração da plataforma" width="1000px" />
+  <strong>Tela de consulta do evento</strong> <br />
+  <img src="./.github/assets/images/event.png" alt="Demonstração da plataforma" width="1000px" />
+  <strong>Tela de criação do evento</strong> <br />
+  <img src="./.github/assets/images/createEvent.png" alt="Demonstração da plataforma" width="1000px" />
 </p>
 
 ## 🛠 Techs
