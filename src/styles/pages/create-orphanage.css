@@ -19,6 +19,8 @@ form.create-orphanage-form {
   padding: 64px 80px;
 
   overflow: hidden;
+
+  box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.5);
 }
 
 form.create-orphanage-form fieldset {

@@ -2,12 +2,14 @@ aside.app-sidebar {
     position: fixed;
     height: 100%;
     padding: 32px 24px;
-    background: linear-gradient(329.54deg, #db4e04 0%, #7d4645 100%); 
+    background: #333; 
   
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+
 }
   
 aside.app-sidebar img {
