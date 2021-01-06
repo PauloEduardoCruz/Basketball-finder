@@ -50,7 +50,7 @@
     z-index: 5;
 }
 
-#page-map .create-orphanage {
+#page-map .create-event {
     position: absolute;
 
     right: 40px;
@@ -69,10 +69,9 @@
 
     transition: background-color 0.2s;
     
-
 }
 
-#page-map .create-orphanage:hover {
+#page-map .create-event:hover {
     background: linear-gradient(329.54deg, #a03a03 0%, #ff4444 100%); 
 }
 

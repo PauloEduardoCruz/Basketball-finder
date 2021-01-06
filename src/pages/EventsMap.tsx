@@ -6,7 +6,6 @@ import Leaflet from 'leaflet'
 
 import '../styles/pages/events-map.css'
 import 'leaflet/dist/leaflet.css'
-//import mapMarkerImg from '../images/Local.svg'
 import mapMarkerImg from '../images/pin.svg'
 import log from '../images/Log3.png'
 
@@ -14,33 +13,19 @@ import log from '../images/Log3.png'
 import api from '../services/api'
 
 
+
+
 // Marker config
-/*
-const mapIcon = Leaflet.icon({
-  iconUrl: mapMarkerImg,
-
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [170, 2]
-
-})
-
-  iconSize: [150, 150],
-  iconAnchor: [29, 68],
-  popupAnchor: [170, 2]
-*/
-
 const mapIcon = Leaflet.icon({
   iconUrl: mapMarkerImg,
 
   iconSize: [70, 70],
   iconAnchor: [35, 70],
   popupAnchor: [150, -17]
-
 })
 
 // Type Script interface
-interface Orphanage {
+interface Event {
   id: number;
   latitude: number;
   longitude: number;
@@ -51,15 +36,15 @@ interface Orphanage {
 
 
 // Início da página
-function OrphanagesMap() {
+function EventsMap() {
 
-  const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
+  const [events, setEvents] = useState<Event[]>([]);
 
 
   //Fazendo a requisição e pegando a lista de orfanatos
   useEffect(() => {
     api.get('orphanages').then(response => {
-      setOrphanages(response.data)
+      setEvents(response.data)
     })
   }, []);
 
@@ -92,17 +77,17 @@ function OrphanagesMap() {
 
         
         
-        { orphanages.map(orphanage => {
-          //Pra cada orfanato que veio do get ele vai fazer essa parada, que é colocar um marcador e o botão com link
+        { events.map(event => {
+          //Pra cada Evento de basquete que veio do get ele vai fazer essa parada, que é colocar um marcador e o botão com link
           return (
             <Marker
               icon={mapIcon}
-              position={[orphanage.latitude, orphanage.longitude]}
-              key={orphanage.id}
+              position={[event.latitude, event.longitude]}
+              key={event.id}
             >
               <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup">
-                {orphanage.name}
-                <Link to={`/event/${orphanage.id}`} >
+                {event.name}
+                <Link to={`/event/${event.id}`} >
                   <FiArrowRight size={20} color="FFF"></FiArrowRight>
                 </Link>
               </Popup>
@@ -112,11 +97,11 @@ function OrphanagesMap() {
       </Map>
 
 
-      <Link to="/event/create" className="create-orphanage">
+      <Link to="/event/create" className="create-event">
         <FiPlus size={32} color="#FFF"></FiPlus>
       </Link>
     </div>
   )
 }
 
-export default OrphanagesMap;
+export default EventsMap;
