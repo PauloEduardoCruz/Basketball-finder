@@ -29,10 +29,8 @@ Uma plataforma para facilitar o encontro de jogos de basquete que estejam aconte
 <p align="center">
   <strong>Tela Web</strong> <br />
   <img src="./.github/assets/images/map.png" alt="Demonstração da plataforma" width="1000px" />
-  <strong>Tela de consulta do evento</strong> <br />
+  <br /><br /><br /> <strong>Tela de consulta do evento</strong> <br />
   <img src="./.github/assets/images/event.png" alt="Demonstração da plataforma" width="1000px" />
-  <strong>Tela de criação do evento</strong> <br />
-  <img src="./.github/assets/images/createEvent.png" alt="Demonstração da plataforma" width="1000px" />
 </p>
 
 ## 🛠 Techs
@@ -42,8 +40,7 @@ Uma plataforma para facilitar o encontro de jogos de basquete que estejam aconte
   - [Typescript](https://www.typescriptlang.org/)
   - [Leaflet](https://leafletjs.com/)
   - [React Leaflet](https://react-leaflet.js.org/)
-  - [Open Street Map](https://www.openstreetmap.org/) ou [Mapbox](https://www.mapbox.com/)
-  - [Framer Motion](https://www.framer.com/motion/)
+  - [Open Street Map](https://www.openstreetmap.org/)
 
 - **Backend**
   - [Nodejs](https://nodejs.org/en/)
