@@ -52,12 +52,12 @@ Uma plataforma para facilitar o encontro de jogos de basquete que estejam aconte
 
 ## ⚙ Instalação e Start
 
-Este repositório é um monorepo, portanto, manterá os fontes do projeto **Web**, **API** e **Mobile**. Cada parte do projeto tem suas dependências e é necessário instala-las individualmente antes da execução, para isso certifique-se de que tenha [NPM](https://www.npmjs.com/) ou [YARN](https://yarnpkg.com/) instalado em seu ambiente, além, é claro, o repositório clonado em seu ambiente.
+Este repositório é um monorepo, portanto, manterá os fontes do projeto **Web** e **API**. Cada parte do projeto tem suas dependências e é necessário instala-las individualmente antes da execução, para isso certifique-se de que tenha [NPM](https://www.npmjs.com/) ou [YARN](https://yarnpkg.com/) instalado em seu ambiente, além, é claro, o repositório clonado em seu ambiente.
 
 Clone o repositório com:
 
 ```bash
-> git clone https://github.com/matheusfelipeog/happy.git
+> git clone https://github.com/PauloEduardoCruz/Basketball-finder.git
 ```
 
 As demonstrações utilizam **YARN** por padronização, mas, caso use **NPM**, basta substituir onde estiver escrito `yarn` por `npm`.
