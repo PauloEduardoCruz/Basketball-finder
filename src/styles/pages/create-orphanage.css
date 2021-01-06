@@ -169,7 +169,6 @@ form.create-orphanage-form button.confirm-button:hover {
   background: #36CF82;
 }
 
-.leaflet-container {
-  border-bottom: 1px solid #DDE3F0;
+form.create-orphanage-form .leaflet-container {
   border-radius: 20px;
 }

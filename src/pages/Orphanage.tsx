@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import L from 'leaflet';
@@ -141,6 +141,13 @@ export default function Orphanage() {
                   </div>
                 )}
             </div>
+
+
+
+            <button type="button" className="contact-button">
+              <FaWhatsapp size={20} color="#FFF" />
+              Entrar em contato
+            </button> 
 
           </div>
         </div>
