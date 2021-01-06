@@ -16,7 +16,6 @@
 - [Screenshots](#-screenshots)
 - [Techs](#-techs)
 - [Instalação e Start](#-instalação-e-start)
-- [Contribuições](#-contribuições)
 - [License](#-license)
 
 
@@ -35,14 +34,14 @@ Uma plataforma para facilitar o encontro de jogos de basquete que estejam aconte
 
 ## 🛠 Techs
 
-- **Web**
+- **FrontEnd**
   - [React](https://reactjs.org/)
   - [Typescript](https://www.typescriptlang.org/)
   - [Leaflet](https://leafletjs.com/)
   - [React Leaflet](https://react-leaflet.js.org/)
   - [Open Street Map](https://www.openstreetmap.org/)
 
-- **Backend**
+- **BackEnd**
   - [Nodejs](https://nodejs.org/en/)
   - [Express](https://expressjs.com/) 
   - [Typeorm](https://typeorm.io/)
@@ -99,6 +98,6 @@ Acesse: [`http://127.0.0.1:3333/`](http://127.0.0.1:3333/) para visualizar.
 
 ## 📜 License
 
-O projeto está sobre a licença [MIT](./LICENSE) ❤️ 
+O projeto está sobre a licença [MIT](./LICENSE) 
 
 Gostou? Deixe uma estrelinha para ajudar o projeto ⭐
