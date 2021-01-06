@@ -1,7 +1,6 @@
 import React from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
 import { useHistory } from 'react-router-dom';
-import mapMarkerImg from '../images/map-marker.svg';
 import log from '../images/player.svg'
 import '../styles/components/Sidebar.css'
 

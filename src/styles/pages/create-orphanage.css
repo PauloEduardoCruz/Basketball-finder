@@ -168,3 +168,8 @@ form.create-orphanage-form button.confirm-button svg {
 form.create-orphanage-form button.confirm-button:hover {
   background: #36CF82;
 }
+
+.leaflet-container {
+  border-bottom: 1px solid #DDE3F0;
+  border-radius: 20px;
+}

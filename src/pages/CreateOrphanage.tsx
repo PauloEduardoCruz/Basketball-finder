@@ -9,16 +9,17 @@ import Sidebar from '../components/SideBar'
 
 
 import '../styles/pages/create-orphanage.css';
-import mapMarkerImg from '../images/map-marker.svg'
+//import mapMarkerImg from '../images/map-marker.svg'
+import mapMarkerImg from '../images/pin.svg'
 import api from "../services/api";
 import { useHistory } from "react-router-dom";
 
 const happyMapIcon = L.icon({
   iconUrl: mapMarkerImg,
 
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [0, -60]
+  iconSize: [70, 70],
+  iconAnchor: [35, 70],
+  popupAnchor: [150, -17]
 })
 
 export default function CreateOrphanage() {
@@ -111,7 +112,7 @@ export default function CreateOrphanage() {
       <main>
         <form onSubmit={handlerSubmit} className="create-orphanage-form">
           <fieldset>
-            <legend>Dados</legend>
+            <legend>Novo evento: </legend>
 
             <Map 
               center={[-15.8950577,-48.118437]}
@@ -128,7 +129,7 @@ export default function CreateOrphanage() {
 
 
 
-            <div className="input-block">
+            <div className="input-block margin-top">
               <label htmlFor="name">Nome</label>
               <input
                id="name"
@@ -170,10 +171,10 @@ export default function CreateOrphanage() {
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Informações importantes</legend>
 
             <div className="input-block">
-              <label htmlFor="instructions">Instruções</label>
+              <label htmlFor="instructions">Ponto de referência</label>
               <textarea
                id="instructions"
                value={instructions}

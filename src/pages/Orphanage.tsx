@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+//import { FaWhatsapp } from "react-icons/fa";
 import { FiClock, FiInfo } from "react-icons/fi";
 import { Map, Marker, TileLayer } from "react-leaflet";
 import L from 'leaflet';
 import Sidebar from '../components/SideBar'
-import mapMarkerImg from '../images/map-marker.svg';
+//import mapMarkerImg from '../images/map-marker.svg';
+import mapMarkerImg from '../images/pin.svg'
 import { useParams } from 'react-router-dom'
 
 
@@ -16,9 +17,10 @@ import api from "../services/api";
 const happyMapIcon = L.icon({
   iconUrl: mapMarkerImg,
 
-  iconSize: [58, 68],
-  iconAnchor: [29, 68],
-  popupAnchor: [0, -60]
+
+  iconSize: [70, 70],
+  iconAnchor: [35, 70],
+  popupAnchor: [150, -17]
 })
 
 // Type Script interface
@@ -116,36 +118,30 @@ export default function Orphanage() {
 
             <hr />
 
-            <h2>Instruções para visita</h2>
+            <h2>Ponto de referência</h2>
             <p>{orphanage.instructions}</p>
 
             <div className="open-details">
               <div className="hour">
                 <FiClock size={32} color="#15B6D6" />
-                Segunda à Sexta <br />
+                Horário de início <br />
                 {orphanage.opening_hours}
               </div>
 
               {orphanage.open_on_weekends ? (
                 <div className="open-on-weekends">
                   <FiInfo size={32} color="#39CC83" />
-                  Atendemos <br />
-                  fim de semana
+                  Quadra com duas cestas. <br />
+                  
                 </div>
               ) : (
                   <div className="open-on-weekends">
-                    <FiInfo size={32} color="#FF669D" />
-                  Não Atendemos <br />
-                  fim de semana
+                    <FiInfo size={32} color="#db4e04" />
+                  Quadra com uma cesta. <br />
                   </div>
                 )}
             </div>
 
-
-            <button type="button" className="contact-button">
-              <FaWhatsapp size={20} color="#FFF" />
-              Entrar em contato
-            </button> 
           </div>
         </div>
       </main>
