@@ -8,7 +8,7 @@ import { FiPlus } from "react-icons/fi";
 import Sidebar from '../components/SideBar'
 
 
-import '../styles/pages/create-orphanage.css';
+import '../styles/pages/create-event.css';
 //import mapMarkerImg from '../images/map-marker.svg'
 import mapMarkerImg from '../images/pin.svg'
 import api from "../services/api";

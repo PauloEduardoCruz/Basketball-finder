@@ -9,7 +9,7 @@ import mapMarkerImg from '../images/pin.svg'
 import { useParams } from 'react-router-dom'
 
 
-import '../styles/pages/orphanage.css';
+import '../styles/pages/event.css';
 import api from "../services/api";
 
 
