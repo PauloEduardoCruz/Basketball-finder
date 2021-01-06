@@ -3,13 +3,10 @@ import { Map, Marker, TileLayer } from 'react-leaflet';
 import { LeafletMouseEvent } from 'leaflet'
 import L from 'leaflet';
 
-
 import { FiPlus } from "react-icons/fi";
 import Sidebar from '../components/SideBar'
 
-
 import '../styles/pages/create-event.css';
-//import mapMarkerImg from '../images/map-marker.svg'
 import mapMarkerImg from '../images/pin.svg'
 import api from "../services/api";
 import { useHistory } from "react-router-dom";
@@ -22,7 +19,7 @@ const happyMapIcon = L.icon({
   popupAnchor: [150, -17]
 })
 
-export default function CreateOrphanage() {
+export default function CreateEvent() {
 
   const history = useHistory();
 
@@ -106,11 +103,11 @@ export default function CreateOrphanage() {
   }
 
   return (
-    <div id="page-create-orphanage">
+    <div id="page-create-event">
       <Sidebar></Sidebar>
 
       <main>
-        <form onSubmit={handlerSubmit} className="create-orphanage-form">
+        <form onSubmit={handlerSubmit} className="create-event-form">
           <fieldset>
             <legend>Novo evento: </legend>
 
@@ -224,4 +221,4 @@ export default function CreateOrphanage() {
   );
 }
 
- // return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
+
